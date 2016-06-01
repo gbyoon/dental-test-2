@@ -175,7 +175,7 @@ h6 {
 }
 
 .aside .btn-profile img:hover {
-	background: #ff9800;
+	opacity: 0.6;
 }
 
 .aside .btn-profile img {
