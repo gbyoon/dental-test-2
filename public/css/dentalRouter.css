@@ -1,29 +1,42 @@
-body{
+@charset "uft-8";
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,200);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+/*****초기화*****/
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+	-webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+	height: 100%;
 }
 
 
-  .typeahead-demo .custom-popup-wrapper {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    background-color: #f9f9f9;
-  }
+body{
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: #fff;
+	color: #333333;
+	font-family: "Raleway" , sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	border:1px solid red;
+}
 
-  .typeahead-demo .custom-popup-wrapper > .message {
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-    color: #868686;
-  }
 
-  .typeahead-demo .custom-popup-wrapper > .dropdown-menu {
-    position: static;
-    float: none;
-    display: block;
-    min-width: 160px;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
