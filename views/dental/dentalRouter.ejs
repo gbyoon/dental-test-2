@@ -84,33 +84,22 @@
 
   </head>
     <body ng-controller="mainController">
+		<div id="wrap-content" class="wrap-content"><!--wrapcontent-->
+			<!--왼쪽-->
+			<div class="aside">
+				<a href="#" class="btn-logo"><img src="img/logop.png"/></a>
+			</div>
+		</div><!--//wrapcontent-->
 
-      <!-- HEADER AND NAVBAR -->
-      <header>
-        <nav class="navbar navbar-default">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="/">제휴 치과 관리 프로그램</a>
-            </div>
 
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-              <li><a href="#asgnMemSrch"><i class="fa fa-shield"></i>배정고객</a></li>
-              <li><a href="#cmpltMemSrch"><i class="fa fa-comment"></i>완료고객</a></li>
-              <li><a href="#logOut"><i class="fa fa-comment"></i>로그아웃</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
 
-        <!-- MAIN CONTENT AND INJECTED VIEWS -->
-    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+	
+	<!--중간화면-->
     <div id="main">
-      <!--{{ message }}-->
-      <div ng-view></div>
+      <!--메시지-->
+      <div ng-view>
+	  </div>
 
-      <!-- angular templating -->
-      <!-- this is where content will be injected -->
     </div>
 
     {{test_string}}
