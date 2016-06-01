@@ -169,7 +169,8 @@ h6 {
 	width: 90px;
 	height: 90px;
 	cursor: pointer;
-	
+	top:30px;
+	left:30px;
 	border:1px solid red;
 }
 
