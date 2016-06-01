@@ -179,3 +179,14 @@ h6 {
 	background: #ff9800;
 }
 
+.aside .btn-profile img {
+	margin-left: 21px;
+	width: 45px;
+}
+
+@media (max-width: 768px) {
+	.aside .btn-profile{
+		width: 60px;
+	}
+}
+
