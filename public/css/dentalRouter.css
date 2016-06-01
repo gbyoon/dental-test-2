@@ -164,3 +164,12 @@ h6 {
 	}
 }
 
+/*프로필*/
+.aside .btn-profile {
+	width: 90px;
+	height: 90px;
+	cursor: pointer;
+	
+	border:1px solid red;
+}
+
