@@ -234,5 +234,6 @@ h6 {
 .wrap-content .header {
 	background-color: #7bd9d8;
 	height: 90px;
+	z-index:2;
 	box-shadow: 3px -8px 10px 8px #585B9C;
 }
