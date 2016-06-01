@@ -116,5 +116,17 @@ h6 {
 /*로고*/
 .aside .btn-logo {
 	border: 1px solid yellow;
+	display: block;
+	height: 90px;
+	background:#00BCD4;
+}
+
+@media (max-width: 768px){
+	.aside .btn-logo {
+		height: 64px;
+		left: -15px;
+		width: 80px;
+		padding-bottom: 10px;
+	}
 }
 
