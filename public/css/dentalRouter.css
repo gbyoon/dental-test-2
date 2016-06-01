@@ -86,6 +86,29 @@ h6 {
 	background: #fff;
 	width: 100%;
 	overflow: hidden;
-	border:1px solid red;
+}
+
+@media (max-width: 768px){
+	.wrap-content {
+		padding-left: 64px;
+	}
+}
+
+/*****오른쪽*****/
+.aside {
+	width: 90px;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index:1;
+	background-color: #7bd9d8;
+	box-shadow: -8px 0 8px 8px #585B9C;
+}
+
+@media (max-width: 768px){
+	.aside {
+		width: 65px;
+		box-shadow: none !important;
+	}
 }
 
