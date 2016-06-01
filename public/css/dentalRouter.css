@@ -190,3 +190,34 @@ h6 {
 	}
 }
 
+/*토글 fixed*/
+
+.toggle-fixed {
+	color: #fff;
+	cursor: pointer;
+	font-size: 36px;
+	width: 90px;
+	margin-bottom: 30px;
+	display: inline-block;
+	text-align: center;
+	opacity: 0.6;
+	position: absolute;
+	bottom: 0;
+	left: -3px;
+}
+
+.toggle-fixed.active {
+	opacity: 3;
+}
+
+@media (max-width: 768px){
+	.toggle-fixed {
+		width: 64px;
+	}
+}
+
+@media (max-width: 480px){
+	.toggle-fixed {
+		display: none;
+	}
+}
