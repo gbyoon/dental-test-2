@@ -50,14 +50,29 @@
   <body ng-controller="mainCtrl">
 
     <div class="wrapper"><!--wrapper-->
-      <h1>제휴치과 로그인 페이지</h1>
-      
-	  <form>
-        <input type="text" placeholder="아이디" ng-model="username"/> <br/>
-        <input type="text" placeholder="패스워드" ng-model="password"/> <br/>
-        <button ng-click="submit()">로그인</button>
-      </form>
-    </div>
+		 <div class="container"><!--container-->
+			<h1>제휴치과 로그인 페이지</h1>
+		  
+			  <form class="form">
+				<input type="text" placeholder="아이디" ng-model="username"/> <br/>
+				<input type="text" placeholder="패스워드" ng-model="password"/> <br/>
+				<button ng-click="submit()">로그인</button>
+			  </form>
+		 </div><!--//container-->
+
+			<ul class="bg-bubbles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>			
+			</ul>		 
+    </div><!--//wrapper-->
 
     {{test_string}}
 	
