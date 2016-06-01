@@ -146,6 +146,10 @@ h6 {
 	width: 60px;
 }
 
+.container:hover {
+	opacity: 0.5;
+}
+
 @media (max-width:768px){
 	.container {
 		margin-left: -3px;
@@ -206,6 +210,10 @@ h6 {
 	position: absolute;
 	bottom: 0;
 	left: -3px;
+}
+
+.toggle-fixed:hover {
+	opacity: 0.5;
 }
 
 .toggle-fixed.active {
