@@ -97,6 +97,7 @@ h6 {
 /*****오른쪽*****/
 .aside {
 	width: 90px;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
