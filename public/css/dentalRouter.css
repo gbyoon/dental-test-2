@@ -135,3 +135,13 @@ h6 {
 	}
 }
 
+/*애니메이티드 전체 버튼*/
+.container {
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 7px;
+	width: 60px;
+	border:1px solid red;
+}
+
