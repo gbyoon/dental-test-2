@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko" ng-app="myApp">
+
   <head>
-    <meta charset="utf-8">
+    <!--meta에 설정하는 경우-->
+	<meta http-equiv="Content-Language" content="ko" >
+	
+	<!--html5 언어설정-->
+    <meta charset="UTF-8">
+	
+	<!--모바일 웹을 위한 설정-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--웹 문서에 대한 제작자 설정-->
+	<meta name="author" content="firstsoft">
+	
+	<!--웹 문서에 대한 설명 설정-->
+	<meta name="description" content="파라메딕 로그인 페이지입니다.">
+	
+	<!--웹 문서에 대한 키워드 설정-->
+	<meta name="keywords" content="파라메딕,치과,보험>
+	
+	<!--최신 버젼으로 동작-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><%= title %></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>라우터 페이지</title>
     
-      <!-- SCROLLS -->
-      <!-- load bootstrap and fontawesome via CDN -->
+      <!--부트스트랩-->
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+      <!--폰트어썸-->
+	  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
-      <!-- SPELLS -->
-      <!-- load angular and angular route via CDN -->
-      <!--
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.js"></script>
-      <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
-      -->
-
-    
+	  
+      <!--angular모듈-->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
@@ -29,43 +39,19 @@
       <script src="http://code.angularjs.org/1.2.16/angular-resource.js"></script>
       <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.5.js"></script>
 
-<!-- 
-    <link rel="stylesheet" href="../../bower_components/angular-veasy-table/bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../../bower_components/angular-veasy-table/bower_components/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="../../bower_components/angular-veasy-table/bower_components/ng-sortable/dist/ng-sortable.css">
-    <link rel="stylesheet" href="../../bower_components/angular-veasy-table/dist/css/veasy-table.min.css">
--->
+    
+	<!--부트스트랩-->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="bower_components/ng-sortable/dist/ng-sortable.css">
-    <link rel="stylesheet" href="bower_components/angular-veasy-table/dist/css/veasy-table.min.css">
+    <!--폰트어썸-->
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <!---ngsortable-->
+	<link rel="stylesheet" href="bower_components/ng-sortable/dist/ng-sortable.css">
+    <!--veasyttable-->
+	<link rel="stylesheet" href="bower_components/angular-veasy-table/dist/css/veasy-table.min.css">
 
+	<!--css-->
+	<link rel="stylesheet" href="css/dentalRouter.css">
 
-    <!-- Libs -->
-<!-- 
-    <script type="text/javascript" src="../../bower_components/angular-veasy-table/bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="../../bower_components/angular-veasy-table/bower_components/angular/angular.js"></script>
-    
-    <script type="text/javascript" src="../../bower_components/angular-veasy-table/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-    <script type="text/javascript" src="../../bower_components/angular-veasy-table/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    
-    <script type="text/javascript" src="../../bower_components/angular-veasy-table/bower_components/ng-sortable/dist/ng-sortable.js"></script>
--->
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    
-    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    
-    <script type="text/javascript" src="bower_components/ng-sortable/dist/ng-sortable.js"></script>
-
-    <!-- App -->
-<!-- 
-    <script type="text/javascript" src="../../bower_components/angular-veasy-table/dist/js/veasy-table.js"></script>
-    <script type="text/javascript" src="../../bower_components/angular-veasy-table/dist/js/veasy-table-tpls.js"></script>
--->
-    <script type="text/javascript" src="bower_components/angular-veasy-table/dist/js/veasy-table.js"></script>
-    <script type="text/javascript" src="bower_components/angular-veasy-table/dist/js/veasy-table-tpls.js"></script>
 
 
 <style>
@@ -128,6 +114,23 @@
     </div>
 
     {{test_string}}
+	
+    <!--자바스크립트-->
+	
+	<!--제이쿼리-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <!--angular-->
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <!--ui부트스트랩-->
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <!--ui부트스트랩 tpls-->
+	<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!--ng sortable-->
+    <script type="text/javascript" src="bower_components/ng-sortable/dist/ng-sortable.js"></script>
+    <!--veasy-table-->
+    <script type="text/javascript" src="bower_components/angular-veasy-table/dist/js/veasy-table.js"></script>
+    <!--veasy-table-tpls-->
+	<script type="text/javascript" src="bower_components/angular-veasy-table/dist/js/veasy-table-tpls.js"></script>	
 
   <script>
 // script.js
