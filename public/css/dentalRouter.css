@@ -228,3 +228,11 @@ h6 {
 		display: none;
 	}
 }
+
+/*****헤더*****/
+
+.wrap-content .header {
+	background-color: #7bd9d8;
+	height: 90px;
+	box-shadow: 3px -8px 10px 8px #585B9C;
+}
