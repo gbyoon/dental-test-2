@@ -216,9 +216,6 @@ h6 {
 	opacity: 0.5;
 }
 
-.toggle-fixed.active {
-	opacity: 3;
-}
 
 @media (max-width: 768px){
 	.toggle-fixed {
