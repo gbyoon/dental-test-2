@@ -36,7 +36,56 @@ body{
 	font-family: "Raleway" , sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	border:1px solid red;
 }
 
+p {
+	font-size: 16px;
+	line-height: 36px;
+}
+
+input {
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+a[data-back-to-contacts] .arrow {
+	right: auto;
+	left: 0;
+}
+
+h5 {
+	font-size: 24px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+.font-weight-700 {
+	font-weight: 700;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.col-xs-12 {
+	width: 100%;
+}
+
+/*****wrap*****/
+.wrap-content {
+	padding: 0 0 85px 90px;
+	position: relative;
+	background: #fff;
+	width: 100%;
+	overflow: hidden;
+	border:1px solid red;
+}
 
