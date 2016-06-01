@@ -113,3 +113,8 @@ h6 {
 	}
 }
 
+/*로고*/
+.aside .btn-logo {
+	border: 1px solid yellow;
+}
+
